@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import CoffeeCard from "@/components/CoffeeCard";
 import { Coffee } from "@/types/coffee";
 import { motion } from "framer-motion";
+import { Star, Award, GemIcon, Trophy, CheckCircle, ThumbsUp } from "lucide-react";
 
 const coffees: Coffee[] = [
   {
@@ -35,6 +36,39 @@ const coffees: Coffee[] = [
   },
 ];
 
+const features = [
+  {
+    icon: Star,
+    title: "精选咖啡豆",
+    description: "从世界各地精心挑选最优质的咖啡豆"
+  },
+  {
+    icon: Award,
+    title: "专业烘焙",
+    description: "采用先进工艺，确保每一批咖啡豆都完美烘焙"
+  },
+  {
+    icon: GemIcon,
+    title: "品质保证",
+    description: "严格的品质控制，只为带给您最佳咖啡体验"
+  },
+  {
+    icon: Trophy,
+    title: "获奖产品",
+    description: "多次获得国际咖啡品鉴大赛奖项"
+  },
+  {
+    icon: CheckCircle,
+    title: "可持续发展",
+    description: "支持环保种植，践行公平贸易"
+  },
+  {
+    icon: ThumbsUp,
+    title: "顾客好评",
+    description: "超过98%的顾客满意度"
+  }
+];
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-coffee-cream">
@@ -59,6 +93,39 @@ const Index = () => {
           >
             Carefully sourced and expertly roasted for the perfect cup
           </motion.p>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-20 bg-white rounded-3xl shadow-sm">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl font-semibold text-coffee text-center mb-12"
+            >
+              我们的特色
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="p-6 rounded-xl bg-coffee-cream/50 hover:bg-coffee-cream transition-colors duration-300"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-12 h-12 rounded-full bg-coffee/10 flex items-center justify-center mb-4">
+                      <feature.icon className="w-6 h-6 text-coffee" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-coffee mb-2">{feature.title}</h3>
+                    <p className="text-coffee-light">{feature.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Featured Products */}
