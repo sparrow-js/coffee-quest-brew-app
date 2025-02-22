@@ -1,5 +1,6 @@
 
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import CoffeeCard from "@/components/CoffeeCard";
 import { Coffee } from "@/types/coffee";
 import { motion } from "framer-motion";
@@ -94,6 +95,8 @@ const Index = () => {
           </motion.div>
         </section>
       </main>
+      
+      <Footer />
     </div>
   );
 };
