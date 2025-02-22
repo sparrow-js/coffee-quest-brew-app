@@ -37,7 +37,7 @@ const coffees: Coffee[] = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#FEF7CD]">
+    <div className="min-h-screen bg-coffee-cream">
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24">
@@ -55,7 +55,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-gray-600 max-w-2xl mx-auto"
+            className="text-xl text-coffee-light max-w-2xl mx-auto"
           >
             Carefully sourced and expertly roasted for the perfect cup
           </motion.p>
@@ -87,7 +87,7 @@ const Index = () => {
             className="max-w-3xl mx-auto"
           >
             <h2 className="text-3xl font-semibold text-coffee mb-6">Our Quality Promise</h2>
-            <p className="text-gray-600">
+            <p className="text-coffee-light">
               Every bean is carefully selected and roasted to perfection, ensuring you experience 
               the finest coffee in every cup. From farm to your cup, we maintain the highest 
               standards of quality and sustainability.

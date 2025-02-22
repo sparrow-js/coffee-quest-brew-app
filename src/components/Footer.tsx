@@ -22,9 +22,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">快速链接</h3>
             <ul className="space-y-2 text-coffee-cream/80">
-              <li><Link to="/shop" className="hover:text-white transition-colors">购物</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">关于我们</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">联系我们</Link></li>
+              <li><Link to="/shop" className="hover:text-coffee-gold transition-colors">购物</Link></li>
+              <li><Link to="/about" className="hover:text-coffee-gold transition-colors">关于我们</Link></li>
+              <li><Link to="/contact" className="hover:text-coffee-gold transition-colors">联系我们</Link></li>
             </ul>
           </div>
 

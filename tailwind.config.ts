@@ -22,10 +22,10 @@ export default {
     extend: {
       colors: {
         coffee: {
-          DEFAULT: "#8B4513",
-          light: "#D2691E",
-          cream: "#FFF8DC",
-          gold: "#FFD700",
+          DEFAULT: "#2F855A", // 更改为深绿色
+          light: "#48BB78", // 更改为中绿色
+          cream: "#F0FFF4", // 更改为淡绿色
+          gold: "#9AE6B4", // 更改为薄荷绿
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
