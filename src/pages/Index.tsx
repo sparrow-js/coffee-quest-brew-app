@@ -36,7 +36,7 @@ const coffees: Coffee[] = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-coffee-cream/20">
+    <div className="min-h-screen bg-[#FEF7CD]">
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24">
