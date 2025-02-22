@@ -39,33 +39,33 @@ const coffees: Coffee[] = [
 const features = [
   {
     icon: Star,
-    title: "精选咖啡豆",
-    description: "从世界各地精心挑选最优质的咖啡豆"
+    title: "Premium Coffee Beans",
+    description: "Carefully selected finest coffee beans from around the world"
   },
   {
     icon: Award,
-    title: "专业烘焙",
-    description: "采用先进工艺，确保每一批咖啡豆都完美烘焙"
+    title: "Expert Roasting",
+    description: "Advanced techniques ensuring perfect roasting for every batch"
   },
   {
     icon: GemIcon,
-    title: "品质保证",
-    description: "严格的品质控制，只为带给您最佳咖啡体验"
+    title: "Quality Guarantee",
+    description: "Strict quality control for the best coffee experience"
   },
   {
     icon: Trophy,
-    title: "获奖产品",
-    description: "多次获得国际咖啡品鉴大赛奖项"
+    title: "Award-Winning",
+    description: "Multiple international coffee tasting competition awards"
   },
   {
     icon: CheckCircle,
-    title: "可持续发展",
-    description: "支持环保种植，践行公平贸易"
+    title: "Sustainable Practice",
+    description: "Supporting eco-friendly farming and fair trade"
   },
   {
     icon: ThumbsUp,
-    title: "顾客好评",
-    description: "超过98%的顾客满意度"
+    title: "Customer Satisfaction",
+    description: "Over 98% customer satisfaction rate"
   }
 ];
 
@@ -104,7 +104,7 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               className="text-3xl font-semibold text-coffee text-center mb-12"
             >
-              我们的特色
+              Our Features
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
