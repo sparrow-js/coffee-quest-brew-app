@@ -75,25 +75,6 @@ const Index = () => {
       <Navigation />
       
       <main className="container mx-auto px-4 pt-24">
-        {/* Hero Section */}
-        <section className="text-center py-20">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-5xl font-bold text-coffee mb-4"
-          >
-            Discover Exceptional Coffee
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-coffee-light max-w-2xl mx-auto"
-          >
-            Carefully sourced and expertly roasted for the perfect cup
-          </motion.p>
-        </section>
 
         {/* Features Section */}
         <section className="py-20 bg-white rounded-3xl shadow-sm">
